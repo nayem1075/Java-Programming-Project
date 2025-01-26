@@ -1,28 +1,27 @@
 
-package com.mycompany.unaryoperator;
+package com.mycompany.logicaloperator;
+import java.util.Scanner;
 
 
 public class Program1 {
     
     public static void main(String[] args){
         
-        int x=10;
-        int result;
+        Scanner User = new Scanner(System.in);
         
-        result = +x;//value positive
-        System.out.println("Result = "+result);
+        char ch;
         
-        result = -x;//value Negative
-        System.out.println("Result = "+result);
+        System.out.print("Enter any letter : ");
+        ch = User.next().charAt(0);
         
-        int y=-10;
-        int Result;
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+            System.out.println("Vowel");  
+        }
+        else{
+            
+            System.out.println("Consonant");
+        }
         
-        Result = +y;//value positive
-        System.out.println("Result = "+Result);
-        
-        Result = -y;//value Negative
-        System.out.println("Result = "+Result);
     }
     
 }

@@ -1,19 +1,27 @@
 
-package com.mycompany.unaryoperator;
-
+package com.mycompany.logicaloperator;
+import java.util.Scanner;
 
 public class Program2 {
     
     public static void main(String[] args){
         
-        int x = 25;
-        int y;
+        Scanner Input = new Scanner(System.in);
         
-        y = x++;//Postfix Increement  y = 26
-         System.out.println("y = "+y);
-        y = x;// y = 26
-       System.out.println("y = "+y);
+        char ch;
         
+        System.out.print("Enter any letter : ");
+        ch = Input.next().charAt(0);
+        
+        if(ch>='a' && ch<='z'){
+            System.out.println("Small Letter");
+        }
+        else if(ch>='A' && ch<='Z'){
+            System.out.println("Capital Letter");
+        }
+        else{
+            System.out.println("Invalid letter");
+        }
         
     }
     

@@ -2,7 +2,7 @@
 package com.mycompany.mathclass;
 
 
-public class Program1 {
+public class MathClass1 {
     
     public static void main(String[] args) {
         
